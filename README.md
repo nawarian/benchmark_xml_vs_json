@@ -4,18 +4,18 @@ benchmark_xml_vs_json
 Um projeto para testar capacidades e diferenças entre as duas marcações.
 
 ----------
-Configurando
+# Configurando
 
 Para que o projeto funcione, você deveria configurar corretamente
 o arquivo `db.config.php` que se encontra na raiz do projeto.
 
 É importante que exista um database com o nome **sakila**,
 pois os scripts `sakila-schema.sql` e `sakila-data.sql`
-(retirados daqui [http://dev.mysql.com/doc/sakila/en/sakila-installation.html])
+(retirados [daqui](http://dev.mysql.com/doc/sakila/en/sakila-installation.html))
 se referem à este schema.
 
 ----------
-Executando
+# Executando
 
 Após configurado o ambiente, apenas execute
 `$ php index.php`
