@@ -15,7 +15,7 @@ echo "Tamanho de 1 registro: " . strlen( $um ) . " bytes, " . (strlen( $um ) / 1
 $t0 = microtime();
 $tamanhoComprimido = strlen( gzcompress( $um ) );
 $tf = microtime();
-$variacaoTempo = $tf - $t0;
+$variacaoTempo = round( $tf - $t0, 4 );
 echo "({$tamanhoComprimido} bytes comprimido com filtro gzip em {$variacaoTempo} segundos)\n\n";
 
 // Realizando conversão dos 10 primeiros itens
@@ -28,7 +28,7 @@ echo "Tamanho de 10 registros: " . strlen( $dez ) . " bytes, " . (strlen( $dez )
 $t0 = microtime();
 $tamanhoComprimido = strlen( gzcompress( $dez ) );
 $tf = microtime();
-$variacaoTempo = $tf - $t0;
+$variacaoTempo = round( $tf - $t0, 4 );
 echo "({$tamanhoComprimido} bytes comprimido com filtro gzip em {$variacaoTempo} segundos)\n\n";
 
 // Realizando conversão dos 1000 itens
@@ -42,5 +42,5 @@ echo "Tamanho de 1000 registros: " . strlen( $mil ) . " bytes, " . (strlen( $mil
 $t0 = microtime();
 $tamanhoComprimido = strlen( gzcompress( $mil ) );
 $tf = microtime();
-$variacaoTempo = $tf - $t0;
+$variacaoTempo = round( $tf - $t0, 4 );
 echo "({$tamanhoComprimido} bytes comprimido com filtro gzip em {$variacaoTempo} segundos)\n\n";
